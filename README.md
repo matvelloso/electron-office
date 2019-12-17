@@ -1,5 +1,3 @@
-<img src="build/icons/128x128.png" alt="logo" height="80" align="right" />
-
 # Electron Office consumer edition
 
 This is a **unofficial**, **unsupported** (really, I just hacked this in a weekend, keep your expectations very low, folks) cross platform Electron wrapper for Office 365 and Office consumer web interfaces, so you have have a consistent, fast, closer to a native-like experience across platforms, including Linux.
