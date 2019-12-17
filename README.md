@@ -16,6 +16,52 @@ Most of this project is a shameless copy of the nice work that Howard (https://g
 * You can navigate from Word to Excel, to OneDrive, to Outlook, etc. all in the same window (use the Office menu at the top left corner)
 * Disabled nodeIntegration - I believe OneDrive's JavaScript plumbing requires this to be off
 
+Here's what it looks like:
+
+Office 365 on Ubuntu: 
+
+![Office 365 on Ubuntu](./docs/img/office-linux.png)
+
+Editing a Word doc on Ubuntu: 
+
+![Word on Ubuntu](./docs/img/word.png)
+
+OneNote: 
+
+![Word on Ubuntu](./docs/img/onenote.png)
+
+Outlook: 
+
+![Outlook on Ubuntu](./docs/img/outlook.png)
+
+Switching between apps: 
+
+![Switching between apps](./docs/img/apps.png)
+
+(yes, it does work on Windows. I haven't tested on Mac but it should work there too, I guess?)
+
+## Why would you do such a thing? Just use the browser!
+
+Short answer: Yes
+
+Long answer: Tom talks about his motivation to use this as his Outlook client, on Windows, instead of the native client (https://github.com/tomlm/electron-outlook):
+
+"I have found that the Outlook Web application a great email client for a number of reasons.
+
+* It always is running the latest without upgrading.
+* It gets new features faster (such as sweep)
+* It starts fast and is really responsive.
+* etc
+
+The one thing that has prevented me from adopting it is the fact that it runs as a browser tab.
+
+* It gets lost in the soup of other tabs
+* It is harder to get to my email tab because it isn't on my active app list
+* Browser hot keys sometimes interact with the application
+* It doesn't give me notifications when the brower goes away etc."
+
+Besides, it does feel very nice to see that running on Linux...
+
 ## How to use or contribute to this
 
 There are two key folders here:
