@@ -311,7 +311,7 @@ class MailWindowController {
             return;
         }
 
-        if (url.indexOf('sharepoint.com')  || url.startsWith('https://www.office.com/') ) {
+        if (url.indexOf('sharepoint.com')>0  || url.startsWith('https://www.office.com/') ) {
             if (this.activeWindow == this.onedrive) {
                 this.onedrive.loadURL(url);
                 e.preventDefault()
@@ -324,7 +324,7 @@ class MailWindowController {
             this.onedrive.loadURL(url);
             this.onedrive.setIcon(path.join(__dirname, '../../assets/office_linux_black.png'))   
             return;
-        } else if (url.indexOf('https://sharepoint.com/') ) {
+        } else if (url.indexOf('https://sharepoint.com/')>0 ) {
             if (this.activeWindow == this.onedrive) {
                 e.preventDefault();
                 this.onedrive.loadURL(url);                
@@ -336,6 +336,14 @@ class MailWindowController {
             this.onedrive.loadURL(url);
 
 
+            return;
+        }
+        else if (url== 'about:blank' ) {
+            if (this.activeWindow == this.onedrive) {
+                e.preventDefault();
+                //this.onedrive.loadURL(url);                
+                return;
+            }
             return;
         }
         // load external urls outside of app
