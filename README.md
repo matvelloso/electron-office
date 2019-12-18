@@ -107,7 +107,7 @@ npm publish
 
 There are many things I could use help with here. Such as:
 
-* General bug fixing (I've never built anything in Electron before so... ¯\_(ツ)_/¯)
+* General bug fixing (I've never built anything in Electron before so... ¯\\\_(ツ)_/¯ )
 * Fixing Icons (I just used screen shots for now so they aren't great)
 * For Office 365 clients, fix the auth issues for other ADFS clients and non ADFS scenarios (auth will probably fail today if you fall in that bucket)
 * Better keyboard shortcuts
