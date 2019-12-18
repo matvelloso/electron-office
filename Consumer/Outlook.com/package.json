@@ -1,7 +1,7 @@
 {
   "name": "outlook.com",
   "productName": "Outlook.com on Electron",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Outlook for Outlook.com Electron wrapper",
   "main": "src/main.js",
   "author": "Tom Laird-McConnell",

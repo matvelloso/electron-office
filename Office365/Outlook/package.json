@@ -1,7 +1,7 @@
 {
-  "name": "mail.office365.com",
+  "name": "outlook.office365.com",
   "productName": "Outlook for Office365 on Electron",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Outlook for Office365 Electron wrapper",
   "main": "src/main.js",
   "author": "Tom Laird-McConnell",

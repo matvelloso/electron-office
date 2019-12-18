@@ -1,7 +1,7 @@
 {
-  "name": "office",
+  "name": "office.office365",
   "productName": "Office 365 on Electron",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Microsoft Office 365 Electron wrapper",
   "main": "src/main.js",
   "author": "Mat Velloso",
