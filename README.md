@@ -1,4 +1,4 @@
-# Electron Office consumer edition
+# Hacky Electron wrapper for Microsoft Office
 
 This is a **unofficial**, **unsupported** (really, I just hacked this in a weekend, keep your expectations very low, folks) cross platform Electron wrapper for Office 365 and Office consumer web interfaces, so you have have a consistent, fast, closer to a native-like experience across platforms, including Linux.
 
