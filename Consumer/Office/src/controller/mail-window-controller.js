@@ -104,7 +104,7 @@ class MailWindowController {
             autoHideMenuBar: true,
             show: false,
             icon: path.join(__dirname, '../../assets/office_linux_black.png'),
-            webPreferences: { nodeIntegration: false }
+            webPreferences: { nodeIntegration: false, sandbox: true, contextIsolation: true, enableRemoteModule: false}
         })
 
         // and load the index.html of the app.
@@ -253,7 +253,7 @@ class MailWindowController {
             return;
         }
 
-        if (url.indexOf('/mail') > 0) {
+        if (url.indexOf('/mail') > 0 || url.startsWith("https://outlook.com/")) {
             if (this.activeWindow == this.mail) {
                 e.preventDefault()
                 return;

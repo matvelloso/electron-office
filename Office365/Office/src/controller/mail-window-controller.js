@@ -100,7 +100,7 @@ class MailWindowController {
             autoHideMenuBar: true,
             show: false,
             icon: path.join(__dirname, '../../assets/office_linux_black.png'),
-            webPreferences: { nodeIntegration: false }
+            webPreferences: { nodeIntegration: false, sandbox: true, contextIsolation: true, enableRemoteModule: false}
         })
 
         // and load the index.html of the app.
@@ -334,6 +334,19 @@ class MailWindowController {
             console.log('show onedrive');
             this.setActiveWindow(this.onedrive);
             this.onedrive.loadURL(url);
+
+
+            return;
+        }  else if (url.startsWith('https://outlook.office365.com/') ) {
+            if (this.activeWindow == this.mail) {
+                e.preventDefault();
+                this.mail.loadURL(url);                
+                return;
+            }
+            e.preventDefault()
+            console.log('show outlook');
+            this.setActiveWindow(this.mail);
+            this.mail.loadURL(url);
 
 
             return;

@@ -94,7 +94,8 @@ class MailWindowController {
             frame: true,
             autoHideMenuBar: true,
             show: false,
-            icon: path.join(__dirname, '../../assets/outlook_linux_black.png')
+            icon: path.join(__dirname, '../../assets/outlook_linux_black.png'),
+            webPreferences: { nodeIntegration: false, sandbox: true, contextIsolation: true, enableRemoteModule: false}
         })
 
         // and load the index.html of the app.
